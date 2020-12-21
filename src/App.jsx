@@ -6,7 +6,7 @@ const App = () => (
 
 	<div className = { s.App }>
 		<header className={ s.header }>
-			Stopwatcher
+			My StopWatch
 		</header>
 		<WatchInterface />
 	</div>
