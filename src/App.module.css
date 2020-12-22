@@ -1,5 +1,11 @@
-.App {
+.app {
   text-align: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 500px;
+  max-height: 800px;
+  margin: 0 auto;
 }
 .header {
   font-size: 30px;
