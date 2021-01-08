@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react'
 import Button from "@material-ui/core/Button"
 import ButtonGroup from "@material-ui/core/ButtonGroup"
-import {timer, interval} from 'rxjs'
+import { timer, interval } from 'rxjs'
 import {
 	first,
 	startWith,
@@ -63,7 +63,7 @@ const StopWatchApp = () => {
 	return (
 		<div className = {s.App}>
 			<div className = 'displayWrapper'>
-				{showTime(time)}
+				{ showTime(time) }
 			</div>
 			<ButtonGroup className = {s.btnGroup}
 			             size = 'large'
