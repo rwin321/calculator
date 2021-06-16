@@ -14,6 +14,7 @@ const StopWatchApp = () => {
 
 	const [time, setTime] = useState(0)
 	const [isGoing, setIsGoing] = useState(false)
+	const [isWait, setIsWait] = useState(false)
 
 	let timer$ = interval(1000)
 	useEffect(() => {
@@ -62,7 +63,8 @@ const StopWatchApp = () => {
 
 	return (
 		<div className = {s.App}>
-			<div className = 'displayWrapper'>
+			<h3 className={s.title}><span>STOPWATCHER</span></h3>
+			<div className = {s.displayWrapper}>
 				{ showTime(time) }
 			</div>
 			<ButtonGroup className = {s.btnGroup}
@@ -77,6 +79,9 @@ const StopWatchApp = () => {
 				<Button onDoubleClick = {waitClick}>Wait</Button>
 				<Button onClick = {resetClick}>Reset</Button>
 			</ButtonGroup>
+				<div className={s.wait} >
+					{isGoing && <h2>to puase it - double tap on wait!</h2>}
+				</div>
 
 		</div>
 	)
